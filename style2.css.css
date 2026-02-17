@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif; /* Postavlja font za telo stranice */
+    background-color: #1e1e1e; /* Postavlja tamnu pozadinu za celu stranicu */
+    color: white; /* Boja teksta je bela */
+    display: flex; /* Koristi flexbox za pozicioniranje sadržaja */
+    justify-content: center; /* Horizontalno centriranje sadržaja */
+    align-items: center; /* Vertikalno centriranje sadržaja */
+    height: 100vh; /* Postavlja visinu tela stranice na 100% visine ekrana , viewport height-visina prozora pregledača tj vidljivog dela ekrana*/
+    margin: 0; /* Uklanja podrazumevane margine stranice */
+}
+
+form {
+    background-image: url('slika.png'); /* Pozadinska slika forme (putanja do slike) */
+    background-size: cover; /* Slika pokriva celu formu bez promena proporcija */
+    background-position: center; /* Pozadinska slika je centrirana u formi */
+    padding: 30px; /* Unutrašnji razmak unutar forme */
+    border-radius: 10px; /* Zaobljene ivice forme */
+    box-shadow: 0 4px 12px 5px rgba(0, 0, 0, 0.5); /* Senka oko forme za 3D efekat */
+	/*box-shadow: [horizontal offset] [vertical offset-vertikalni pomak, + prema dole] [blur radius-poluprečnik zamućenja] [spread radius-širenje senke] [color];*/
+    width: 400px; /* Širina forme */
+    display: flex; /* Koristi flexbox za raspored elemenata u formi */
+    flex-direction: column; /* Polja unosa i dugme će biti u vertikalnom rasporedu */
+    align-items: center; /* Poravnanje svih elemenata forme na sredinu */
+}
+
+input, textarea {
+    width: 100%; /* Polja zauzimaju celu širinu forme */
+    padding: 10px; /* Unutrašnji razmak unutar polja */
+    margin: 10px 0; /* Razmak između polja */
+    border: 1px solid #333; /* Tamna ivica oko polja */
+    border-radius: 5px; /* Zaobljene ivice polja */
+    background-color: #333; /* Tamna pozadina za polja */
+    color: white; /* Bela boja teksta unutar polja */
+    font-size: 1em; /* Veličina fonta unutar polja */
+    box-sizing: border-box; /* Uključuje padding u ukupnu širinu polja */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bbb; /* Svetlo siva boja za placeholder tekst */
+}
+
+textarea {
+    resize: vertical; /* Omogućava korisnicima da menjaju visinu textarea polja */
+    height: 100px; /* Početna visina textarea polja */
+}
+
+button {
+    padding: 15px; /* Unutrašnji razmak unutar dugmeta */
+    width: 100%; /* Dugme zauzima celu širinu forme */
+    border: none; /* Bez ivica oko dugmeta */
+    border-radius: 5px; /* Zaobljene ivice dugmeta */
+    background-color: #333; /* Tamna pozadina dugmeta */
+    color: white; /* Bela boja teksta na dugmetu */
+    font-size: 1.2em; /* Veličina fonta na dugmetu */
+    cursor: pointer; /* Kursor postaje pokazivač kada se mišem pređe preko dugmeta */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Glatka promena boje pozadine i senke pri interakciji */
+	/*transition: [property] [duration] [timing-function-promena počinje polako, ubrzava, pa usporava];*/
+    box-sizing: border-box; /* Uključuje padding u ukupnu širinu dugmeta */
+}
+
+/* Promena boje pozadine dugmeta kada se pređe mišem */
+button:hover {
+    background-color: #444; /* Tamnija boja pozadine kada se pređe mišem */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Senka koja se pojavljuje kada je dugme u fokusu */
+}
+
+/* Stilizacija dugmeta pri prelaženju mišem */
+button:active {
+    background-color: #000; /* Još tamnija pozadina kada je dugme pritisnuto */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Dublja senka kada je dugme pritisnuto */
+}

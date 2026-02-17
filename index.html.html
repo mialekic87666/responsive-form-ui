@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za unos podataka</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form method="POST" action="submit_form.php">
+        <fieldset>
+            <legend>Unos podataka</legend>
+
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime" required>
+
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime" name="prezime" placeholder="Unesite svoje prezime" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Unesite svoju email adresu" required>
+
+            <label for="password">Lozinka:</label>
+            <input type="password" id="password" name="password" placeholder="Unesite lozinku" required>
+
+            <label for="komentar">Komentar:</label>
+            <textarea id="komentar" name="komentar" placeholder="Unesite komentar" required></textarea>
+
+            <button type="submit" id="submit-btn" name="submit" value="Potvrdi">Potvrdi</button>
+        </fieldset>
+    </form>
+</body>
+</html>
