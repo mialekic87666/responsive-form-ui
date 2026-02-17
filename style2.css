@@ -10,7 +10,7 @@ body {
 }
 
 form {
-   background-image: url('slike/slika.png'); /* Pozadinska slika forme (putanja do slike) */
+	background-image: url('./slike/slika.png');
     background-size: cover; /* Slika pokriva celu formu bez promena proporcija */
     background-position: center; /* Pozadinska slika je centrirana u formi */
     padding: 30px; /* Unutrašnji razmak unutar forme */
@@ -69,4 +69,5 @@ button:active {
     background-color: #000; /* Još tamnija pozadina kada je dugme pritisnuto */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Dublja senka kada je dugme pritisnuto */
 }
+
 
